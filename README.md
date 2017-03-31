@@ -2,13 +2,13 @@
 
 # [请点击并换到移动端的视口查看这个demo吧](https://smile-ucas.github.io/phoneLock/index.html)
 
-##html文件
+## html文件
 定义一个id为“container”的div，自适应屏幕高与宽。定义**组件**对象phoneLock，调用对象的初始化方法，并开始执行。
-##js文件
+## js文件
 加载id为“container”的div，将其高与宽赋给组件对象phoneLock
 
 
-###init方法
+### init方法
 为组件添加各种控件，并加入毛玻璃效果，使界面具有立体感；
 
 为组建对象设置属性；
@@ -16,20 +16,20 @@
 绘制九个大圆；
 
 绑定事件。
-###createCircle方法
+### createCircle方法
 根据题意，定义每行每列各3个大圆，根据屏幕宽设置canvas的高宽、大圆的半径（r）和圆与圆之间的间距（设为了2*r），据此判断每个大圆的圆心坐标，调用
 **createBigCircle方法** 绘制大圆。
-###bindEvent方法
+### bindEvent方法
 
-####对设置密码的事件监听
+#### 对设置密码的事件监听
 
 当点击设置密码的按钮时，动态变化提示栏（id为“info”的babel）的信息，并设置属性verFlag和radioVerP为false(说明目前不是验证密码阶段)，radioSetP属性为true（说明目前正设置密码）。
 
-####对验证密码的事件监听
+#### 对验证密码的事件监听
 
 当点击验证密码的按钮时，动态变化提示栏的信息，与对设置密码的事件监听一样，设置前面提及的三个属性。
 
-####对手势事件监听
+#### 对手势事件监听
 
 *  **开始：**事件类型为touchstart，表示事件开始，为判断手指触及屏幕时所在位置是否在大圆内，以便判断是否用小圆填充该大圆，调用**getPosition**方法，若手指触发事件发生在大圆内，则更新aftPoint数组和remainPoint数组和判断手指移动的标志属性touchFlag为真。
 
