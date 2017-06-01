@@ -1,6 +1,6 @@
 # phoneLock    手机手势密码（UI组件）
 
-# [请点击并换到移动端的视口查看这个demo吧](https://smile-ucas.github.io/phoneLock/index.html)
+# [请点击并换到移动端的视口查看这个demo吧](https://xiaoxiaohappy.github.io/phoneLock/index.html)
 
 ## html文件
 定义一个id为“container”的div，自适应屏幕高与宽。定义**组件**对象phoneLock，调用对象的初始化方法，并开始执行。
